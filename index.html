@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discreto satisfaction survey</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.1.60/inputmask/jquery.inputmask.js"></script>
+    <script src="scripts/main.js"></script>
+    <link rel="stylesheet" href="styles/css/main.css" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <article class="grid-body">
+      <section class="header">
+        <div class="progressbar">
+          <ul>
+            <li class="step1 active"></li>
+            <li class="step2"></li>
+            <li class="step3"></li>
+            <li class="step4"></li>
+          </ul>
+        </div>
+      </section>
+      <section class="wrapper">
+        <!--Section 1 -->
+        <div class="section complete-height" id="section1">
+          <div class="grid-survey complete-height center-flex">
+            <div class="grid-row card">
+              <div class="subtitle center-text">
+                ¿Cómo estuvo tu experiencia?<br /><br />
+                Tu evaluación nos permite mejorar nuestros servicios. Si así lo
+                deseas, por favor responde las preguntas a continuación. Es
+                totalmente voluntario y te tomará entre 3 y 5 minutos.<br /><br />
+
+                Manejaremos tus respuestas de forma confidencial, pero puedes
+                dejar tus datos si deseas que te contactemos para dar
+                seguimiento a tus comentarios. <br /><br />¡Muchas gracias!
+              </div>
+              <div class="para"></div>
+              <div class="img-c">
+                <div class="i-ini"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Section 2 -->
+        <div class="section" style="display: none" id="section2">
+          <div id="qnr">
+            <!--Header of section-->
+            <h1 style="text-align:center; padding:20px"> Satisfacción/Opinión general del servicio</h1>
+            <!--End of header of section-->
+             <!--Liker Section -->
+             <div id="liker-section" style="margin-top:20px">
+              <div class="question" id="question-1">
+                <div class="question-answer">
+                  <div class="text-question para">
+                    En general, ¿cómo calificarías el servicio recibido? 
+                  </div>
+                  <div class="answer-selected"></div>
+                </div>
+                <div class="optns">
+                  <div class="opt one" data-value="very_bad" id="answer1"></div>
+                  <div class="opt two" data-value="bad" id="answer1"></div>
+                  <div
+                    class="opt three"
+                    data-value="neutral"
+                    id="answer1"
+                  ></div>
+                  <div class="opt four" data-value="good" id="answer1"></div>
+                  <div
+                    class="opt five"
+                    data-value="very_good"
+                    id="answer1"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="question" id="question-2">
+                <div class="question-answer">
+                  <div class="text-question para">
+                    ¿Cómo calificarías la amabilidad y respeto del personal?
+                  </div>
+                  <div class="answer-selected"></div>
+                </div>
+                <div class="optns">
+                  <div class="opt one" data-value="very_bad" id="answer2"></div>
+                  <div class="opt two" data-value="bad" id="answer2"></div>
+                  <div
+                    class="opt three"
+                    data-value="neutral"
+                    id="answer2"
+                  ></div>
+                  <div class="opt four" data-value="good" id="answer2"></div>
+                  <div
+                    class="opt five"
+                    data-value="very_good"
+                    id="answer2"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="question" id="question-3">
+                <div class="question-answer">
+                  <div class="text-question para">
+                    ¿Cómo calificarías la claridad de la información brindada? 
+                  </div>
+                  <div class="answer-selected"></div>
+                </div>
+                <div class="optns">
+                  <div class="opt one" data-value="very_bad" id="answer3"></div>
+                  <div class="opt two" data-value="bad" id="answer3"></div>
+                  <div
+                    class="opt three"
+                    data-value="neutral"
+                    id="answer3"
+                  ></div>
+                  <div class="opt four" data-value="good" id="answer3"></div>
+                  <div
+                    class="opt five"
+                    data-value="very_good"
+                    id="answer3"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="question" id="question-4">
+                <div class="question-answer">
+                  <div class="text-question para">
+                    ¿Cómo calificarías la disponibilidad de quien te atendió
+                    para escuchar tus necesidades y resolver tus dudas?
+                  </div>
+                  <div class="answer-selected"></div>
+                </div>
+                <div class="optns">
+                  <div class="opt one" data-value="very_bad" id="answer4"></div>
+                  <div class="opt two" data-value="bad" id="answer4"></div>
+                  <div
+                    class="opt three"
+                    data-value="neutral"
+                    id="answer4"
+                  ></div>
+                  <div class="opt four" data-value="good" id="answer4"></div>
+                  <div
+                    class="opt five"
+                    data-value="very_good"
+                    id="answer4"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+
+            <!--Header of section-->
+            <h1 style="text-align:center; padding:20px"> Evaluación general del servicio</h1>
+            <!--End of header of section-->
+            <!-- Question -->
+            <div class="">
+              <div class="subtitle-s">¿A través de que medio recibiste  el servicio Discreto de PASMO, para referir a tus contactos o parejas a los servicios de prueba de VIH de PASMO? </div>
+
+              <div class="yn_radio_cnt">
+                <select
+                  name="discreto-service-delivered-by-dropdown"
+                  id="discreto-service-delivered-by-dropdown"
+                  class="input-text"
+                >
+                  <option disabled selected value="">
+                     Selecciona una opción 
+                  </option>
+                  <option value="Discreto Web">Discreto Web</option>
+                  <option value="Llamada telefónica">Llamada telefónica</option>
+                  <option value="Mensaje de WhatsApp">Mensaje de WhatsApp</option>
+                  <option value="Durante la vinculación a tratamiento">Durante la vinculación a tratamiento</option>
+                </select>
+              </div>
+            </div>
+            <!-- end Question -->
+            
+           
+          </div>
+        </div>
+        <!--Section 3 -->
+        <div class="section" style="display: none" id="section3">
+          <div class="qnr">
+            <!--Header of section-->
+            <h1 style="text-align:center; padding:20px"> Evaluación general del servicio</h1>
+            <!--End of header of section-->
+            <!-- Question -->
+            <div class="">
+              <div class="subtitle-s">
+                ¿Te explicaron que el servicio es voluntario y confidencial?
+              </div>
+
+              <div class="yn_radio_cnt">
+                <label class="radio para"
+                  >Si
+                  <input
+                    type="radio"
+                    name="volunteer-service-group"
+                    value="true"
+                    id="volunteer-service-yes"
+                  />
+                  <span class="radiomark"></span>
+                </label>
+                <label class="radio para"
+                  >No
+                  <input
+                    type="radio"
+                    name="volunteer-service-group"
+                    value="false"
+                    id="volunteer-service-no"
+                  />
+                  <span class="radiomark"></span>
+                </label>
+              </div>
+            </div>
+            <!-- end Question -->
+            <!-- Question -->
+            <div class="">
+              <div class="subtitle-s">
+                ¿Te explicaron las modalidades que existen para contactar y ofrecer la prueba de VIH a tus contactos y/o parejas? 
+              </div>
+              <div class="yn_radio_cnt">
+                <label class="radio para"
+                  >Si
+                  <input
+                    type="radio"
+                    name="vih-test-explained-group"
+                    value="true"
+                    id="vih-test-explained-yes"
+                  />
+                  <span class="radiomark"></span>
+                </label>
+                <label class="radio para"
+                  >No
+                  <input
+                    type="radio"
+                    name="vih-test-explained-group"
+                    value="false"
+                    id="vih-test-explained-no"
+                  />
+                  <span class="radiomark"></span>
+                </label>
+              </div>
+            </div>
+            <!-- end Question -->
+            <!-- Question -->
+            <div class="">
+              <div class="subtitle-s">
+                ¿Aceptaste verbalmente brindar información sobre tus contactos? 
+              </div>
+
+              <div class="yn_radio_cnt">
+                <label class="radio para"
+                  >Si
+                  <input
+                    type="radio"
+                    name="verbal-information-acceptance-group"
+                    value="true"
+                    id="verbal-information-acceptance-yes"
+                  />
+                  <span class="radiomark"></span>
+                </label>
+                <label class="radio para"
+                  >No
+                  <input
+                    type="radio"
+                    name="verbal-information-acceptance-group"
+                    value="false"
+                    id="verbal-information-acceptance-no"
+                  />
+                  <span class="radiomark"></span>
+                </label>
+              </div>
+            </div>
+            <!-- end Question -->
+            <!-- Question -->
+            <div class="">
+              <div class="subtitle-s">
+                ¿Recibiste información sobre los lugares, medios y procedimientos para hacer una denuncia en caso de violación a la privacidad, confidencialidad, haber sido víctima de estigma y discriminación, o haber sido presionado para brindar información de tus contactos? 
+              </div>
+
+              <div class="yn_radio_cnt">
+                <label class="radio para"
+                  >Si
+                  <input
+                    type="radio"
+                    name="privacy-violation-information-group"
+                    value="true"
+                    id="privacy-violation-information-yes"
+                  />
+                  <span class="radiomark"></span>
+                </label>
+                <label class="radio para"
+                  >No
+                  <input
+                    type="radio"
+                    name="privacy-violation-information-group"
+                    value="false"
+                    id="privacy-violation-information-no"
+                  />
+                  <span class="radiomark"></span>
+                </label>
+              </div>
+            </div>
+            <!-- end Question -->
+            <!-- Question -->
+            <div class="medicine-not-received-container">
+              <div class="subtitle-s">
+                ¿Crees que hubo alguna violación a tu privacidad, confidencialidad, fuiste víctima de estigma y discriminación o fuiste presionado para brindar información de tus contactos? 
+              </div>
+
+              <div class="yn_radio_cnt">
+                <select
+                  name="privacy-violation-dropdown"
+                  id="privacy-violation-dropdown"
+                  class="input-text"
+                  style="width: 300px"
+                >
+                  <option disabled selected value="">
+                    Selecciona una opción
+                  </option>
+                  <option value="Si">
+                    Si
+                  </option>
+                  <option value="No">
+                    No
+                  </option>
+                  <option value="Prefiero no decir">
+                    Prefiero no decir
+                  </option>
+                </select>
+              </div>
+            </div>
+            <!-- end Question -->
+            <!-- Question -->
+            <div class="">
+              <div class="subtitle-s">
+                ¿Ha habido alguna situación incómoda o que pusiera en riesgo tu seguridad derivada de haber proporcionado información sobre tus contactos? 
+              </div>
+
+              <div class="yn_radio_cnt">
+                <select
+                  name="security-risk-dropdown"
+                  id="security-risk-dropdown"
+                  class="input-text"
+                  style="width: 300px"
+                >
+                  <option disabled selected value="">
+                    Selecciona una opción
+                  </option>
+                  <option value="Si">
+                    Si
+                  </option>
+                  <option value="No">
+                    No
+                  </option>
+                  <option value="Prefiero no decir">
+                    Prefiero no decir
+                  </option>
+                </select>
+              </div>
+            </div>
+            <!-- end Question -->
+            <!-- Question -->
+            <div class="">
+              <div class="subtitle-s">¿Deseas presentar una denuncia?</div>
+
+              <div class="yn_radio_cnt">
+                <label class="radio para"
+                  >Si
+                  <input
+                    type="radio"
+                    name="make-a-complaint-group"
+                    value="true"
+                    id="make-a-complaint-yes"
+                  />
+                  <span class="radiomark"></span>
+                </label>
+                <label class="radio para"
+                  >No
+                  <input
+                    type="radio"
+                    name="make-a-complaint-group"
+                    value="false"
+                    id="make-a-complaint-no"
+                  />
+                  <span class="radiomark"></span>
+                </label>
+              </div>
+            </div>
+            <!-- end Question -->
+            <!-- Question -->
+            <div class="make-a-complaint-text-section">
+              <div class="subtitle-s">
+                Escribe en este espacio tu denuncia:
+              </div>
+
+              <div class="">
+                <textarea
+                  class="input-area"
+                  name="make-a-complaint-text"
+                  id="make-a-complaint-text"
+                  rows="7"
+                  style="width: 100%"
+                ></textarea>
+              </div>
+            </div>
+            <!-- end Question -->
+            <!-- Question -->
+            <div class="">
+              <div class="subtitle-s">
+                ¿Deseas ser contactado(a) para dar seguimiento a tu comentario o
+                denuncia?
+              </div>
+
+              <div class="yn_radio_cnt">
+                <label class="radio para"
+                  >Si
+                  <input
+                    type="radio"
+                    name="follow-up-service-offered-group"
+                    value="true"
+                    id="follow-up-service-offered-yes"
+                  />
+                  <span class="radiomark"></span>
+                </label>
+                <label class="radio para"
+                  >No
+                  <input
+                    type="radio"
+                    name="follow-up-service-offered-group"
+                    value="false"
+                    id="follow-up-service-offered-no"
+                  />
+                  <span class="radiomark"></span>
+                </label>
+              </div>
+            </div>
+            <!-- end Question -->
+            <div class="contact-info-section">
+              <!-- Question -->
+              <div class="">
+                <div class="subtitle-s">
+                  Indica el número de teléfono al que PASMO te puede contactar:
+                </div>
+
+                <div class="input-position-end">
+                  <input
+                    class="input-text"
+                    type="text"
+                    name="customer-phone-number"
+                    id="customer-phone-number"
+                  />
+                </div>
+              </div>
+              <!-- end Question -->
+              <!-- Question -->
+              <div class="">
+                <div class="subtitle-s">Indica tu nombre para contactarte:</div>
+
+                <div class="input-position-end">
+                  <input
+                    class="input-text"
+                    type="text"
+                    name="customer-name"
+                    id="customer-name"
+                    min="1"
+                    max="10"
+                  />
+                </div>
+              </div>
+              <!-- end Question -->
+          </div>
+        </div>
+       </div>
+        <!-- section 4 final -->
+        <div
+          id="section4"
+          style="display: none"
+          class="section complete-height"
+        >
+          <div class="grid-survey complete-height center-flex">
+            <div class="grid-row card">
+              <div class="subtitle center-text">
+                ¡Gracias por completar este cuestionario!<br /><br />
+                Nos permitirá mejorar el servicio.<br />
+                Ahora puedes cerrar esta ventana.
+              </div>
+              <div class="para"></div>
+            </div>
+          </div>
+        </div>
+       
+      </section>
+      <section class="footer">
+        <div id="back" class="btn-primary" style="display: none">Anterior</div>
+        <div id="next" class="btn-primary">Siguiente</div>
+        <div id="send" class="btn-primary" style="display: none">
+          Enviar cuestionario
+        </div>
+      </section>
+    </article>
+  </body>
+</html>

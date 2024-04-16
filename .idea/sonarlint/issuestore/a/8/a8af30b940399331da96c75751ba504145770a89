@@ -1,0 +1,18 @@
+
+djavascript:S1481"CRemove the declaration of the unused 'privacyViolatedYes' variable.(ë¬À…ùÿÿÿÿ
+ajavascript:S1854"@Remove this useless assignment to variable "privacyViolatedYes".(ë¬À…ùÿÿÿÿ
+^javascript:S1481"BRemove the declaration of the unused 'privacyViolatedNo' variable.(ıçÄ
+[javascript:S1854"?Remove this useless assignment to variable "privacyViolatedNo".(ıçÄ
+Jjavascript:S3504.")Unexpected var, use let or const instead.(Õ´À’ùÿÿÿÿ
+Ejavascript:S3504/")Unexpected var, use let or const instead.(Œö©ƒ
+Yjavascript:S14815"=Remove the declaration of the unused 'likerSection' variable.(´àã
+Vjavascript:S18545":Remove this useless assignment to variable "likerSection".(´àã
+Ejavascript:S35048")Unexpected var, use let or const instead.(•óšä
+Djavascript:S35049")Unexpected var, use let or const instead.(úà¡3
+\javascript:S1481L"@Remove the declaration of the unused 'serviceProvided' variable.(„Š¶î
+Yjavascript:S1854L"=Remove this useless assignment to variable "serviceProvided".(„Š¶î
+djavascript:S1481M"CRemove the declaration of the unused 'serviceNotProvided' variable.(ØÌâíûÿÿÿÿ
+ajavascript:S1854M"@Remove this useless assignment to variable "serviceNotProvided".(ØÌâíûÿÿÿÿ
+Kjavascript:S3504ş")Unexpected var, use let or const instead.(Ó¯÷èşÿÿÿÿ
+^javascript:S1126¨"<Replace this if-then-else flow by a single return statement.(Äİ¸éüÿÿÿÿ
+vjavascript:S3776¾"TRefactor this function to reduce its Cognitive Complexity from 16 to the 15 allowed.(ŠÅ”óşÿÿÿÿ
